@@ -38,6 +38,7 @@ dependencies:
   flutter_carousel_widget: ^2.2.0
   zoom_tap_animation: ^1.1.0
   flutter_phone_direct_caller: ^2.1.1
+  animated_snack_bar: ^0.4.0
 
 dev_dependencies:
   flutter_test:
