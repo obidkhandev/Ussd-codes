@@ -1,4 +1,3 @@
-import 'package:ussd_code/data/models/company_model.dart';
 import 'package:ussd_code/ui/collections/ui/tarif_widget.dart';
 import 'package:ussd_code/utils/tools/file_importers.dart';
 
