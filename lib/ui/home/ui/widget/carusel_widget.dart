@@ -25,9 +25,9 @@ class CaruselWidget extends StatelessWidget {
               margin: const EdgeInsets.all(6),
               width: MediaQuery.of(context).size.width,
               decoration: BoxDecoration(
-                  image:
-                      DecorationImage(image: AssetImage(i), fit: BoxFit.cover),
-                  color: Colors.amber),
+                image: DecorationImage(image: AssetImage(i), fit: BoxFit.cover),
+                color: Colors.amber,
+              ),
             );
           },
         );

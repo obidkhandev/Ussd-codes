@@ -1,5 +1,5 @@
-import 'package:flutter_carousel_widget/flutter_carousel_widget.dart';
-import 'package:ussd_code/ui/home/ui/widget/carusel_widget.dart';
+import 'package:ussd_code/data/all_data/all_data.dart';
+import 'package:ussd_code/ui/home/ui/widget/company_box.dart';
 import 'package:ussd_code/utils/constants/app_images.dart';
 import 'package:ussd_code/utils/tools/file_importers.dart';
 
@@ -28,30 +28,10 @@ class HomePage extends StatelessWidget {
                 Expanded(
                   child: TabBarView(
                     children: [
-                      Container(
-                        height: height(context) * 0.9,
-                        // color: Colors.red,
-                        // child: Text("Mobiuz"),
-                        child: Column(
-                          children: [
-                            CaruselWidget(
-                              images: [
-                                AppImage.mobiuzBanner1,
-                                AppImage.mobiuzBanner2,
-                              ],
-                            ),
-                          ],
-                        ),
-                      ),
-                      Container(
-                        child: Text("Beeline"),
-                      ),
-                      Container(
-                        child: Text("Ucell"),
-                      ),
-                      Container(
-                        child: Text("Uzmobile"),
-                      ),
+                      CompanyBox(company: companies[0]),
+                      CompanyBox(company: companies[1]),
+                      CompanyBox(company: companies[2]),
+                      CompanyBox(company: companies[3]),
                     ],
                   ),
                 ),

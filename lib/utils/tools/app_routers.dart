@@ -1,5 +1,5 @@
 import 'package:ussd_code/ui/home/ui/home_page.dart';
-import 'package:ussd_code/ui/internet_collections/ui/internet_collections.dart';
+import 'package:ussd_code/ui/collections/ui/internet_collections.dart';
 import 'package:ussd_code/utils/tools/file_importers.dart';
 
 class RouteName {

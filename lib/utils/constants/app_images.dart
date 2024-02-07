@@ -7,9 +7,8 @@ class AppImage {
   static const ucellBanner1 = "$imagePath/ucell_big.png";
   static const ucellBanner2 = "$imagePath/ucell_big2.png";
   static const ucellBanner3 = "$imagePath/ucell_big3.png";
-  static const bBanner1 = "$imagePath/bl_big.png";
-  static const bBanner2 = "$imagePath/bl_big2.png";
-  static const bBanner3 = "$imagePath/bl_big2.png";
+  static const bBanner1 = "$imagePath/bl_big.jpg";
+  static const bBanner2 = "$imagePath/bl_big2.jpg";
   static const uzmobileBanner1 = "$imagePath/uzmobile_big.png";
   static const uzmobileBanner2 = "$imagePath/uzmobile_big2.png";
   static const uzmobileBanner3 = "$imagePath/uzmobile.png";
