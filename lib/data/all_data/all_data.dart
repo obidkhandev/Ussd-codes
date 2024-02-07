@@ -5,6 +5,7 @@ import 'package:ussd_code/utils/tools/file_importers.dart';
 
 List<CompanyModel> companies = [
   CompanyModel(
+      companyLogo: AppImage.mobiuzLogo,
     image: [
       AppImage.mobiuzBanner1,
       AppImage.mobiuzBanner2,
@@ -12,6 +13,7 @@ List<CompanyModel> companies = [
     color: Colors.red.shade700,
   ),
   CompanyModel(
+      companyLogo: AppImage.beelineLogo,
     image: [
       AppImage.bBanner1,
       AppImage.bBanner2,
@@ -19,6 +21,7 @@ List<CompanyModel> companies = [
     color: Colors.yellow.shade800,
   ),
   CompanyModel(
+      companyLogo: AppImage.ucellLogo,
     image: [
       AppImage.ucellBanner1,
       AppImage.ucellBanner2,
@@ -26,6 +29,7 @@ List<CompanyModel> companies = [
     color: Colors.purple,
   ),
   CompanyModel(
+      companyLogo: AppImage.uzmobileLogo,
     image: [
       AppImage.uzmobileBanner1,
       AppImage.uzmobileBanner2,

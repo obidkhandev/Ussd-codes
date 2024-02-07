@@ -1,3 +1,4 @@
+import 'package:ussd_code/data/models/company_model.dart';
 import 'package:ussd_code/ui/home/ui/home_page.dart';
 import 'package:ussd_code/ui/collections/ui/collections.dart';
 import 'package:ussd_code/utils/tools/file_importers.dart';
@@ -9,7 +10,7 @@ class RouteName {
 
 class AppRouter {
   static Route generateRoute(RouteSettings settings) {
-    // var args = settings.arguments;
+    var args = settings.arguments;
     switch (settings.name) {
       case RouteName.home:
         return MaterialPageRoute(
@@ -17,7 +18,7 @@ class AppRouter {
         );
        case RouteName.internetCollections:
         return MaterialPageRoute(
-          builder: (_) => const CollectionsPage(),
+          builder: (_) => CollectionsPage(company: args as CompanyModel,),
         );
       default:
         return MaterialPageRoute(

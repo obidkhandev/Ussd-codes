@@ -1,23 +1,22 @@
 import 'package:flutter/material.dart';
 import 'package:ussd_code/data/models/menu_model.dart';
-import 'package:ussd_code/utils/tools/app_routers.dart';
 import 'package:zoom_tap_animation/zoom_tap_animation.dart';
 
 class MenuWidget extends StatelessWidget {
   final MenuModel model;
   final Color color;
+  final VoidCallback onTap;
   const MenuWidget({
     super.key,
     required this.model,
     required this.color,
+    required this.onTap,
   });
 
   @override
   Widget build(BuildContext context) {
     return ZoomTapAnimation(
-      onTap: () {
-        Navigator.pushNamed(context, RouteName.internetCollections);
-      },
+      onTap: onTap,
       child: Container(
         height: 54,
         padding: const EdgeInsets.symmetric(horizontal: 8, vertical: 4),
