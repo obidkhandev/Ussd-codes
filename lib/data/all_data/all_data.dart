@@ -1,4 +1,3 @@
-import 'package:ussd_code/data/models/company_model.dart';
 import 'package:ussd_code/data/models/menu_model.dart';
 import 'package:ussd_code/ui/collections/data/model/tarif_model.dart';
 import 'package:ussd_code/utils/constants/app_images.dart';
@@ -124,6 +123,14 @@ List<CompanyModel> companies = [
   CompanyModel(
     tariflar: [
       TarifModel(
+        "Doimiy 25",
+        mb: "6000 mb",
+        min: "Cheksiz daq",
+        price: "25.000 so'm",
+        sms: "500 sms",
+        ussd: "*120#",
+      ),
+      TarifModel(
         "Doimiy 40",
         mb: "12000 mb",
         min: "Cheksiz daq",
@@ -136,7 +143,15 @@ List<CompanyModel> companies = [
         mb: "20000 mb",
         min: "Cheksiz daq",
         price: "50.000 so'm",
-        sms: "  sms",
+        sms: " 1500 sms",
+        ussd: "*120#",
+      ),
+      TarifModel(
+        "Doimiy 70",
+        mb: "35000 mb",
+        min: "Cheksiz daq",
+        price: "70.000 so'm",
+        sms: "2000 sms",
         ussd: "*120#",
       ),
     ],
@@ -151,7 +166,7 @@ List<CompanyModel> companies = [
     tariflar: [
       TarifModel(
         "Milliy 10",
-        mb: "1 mg 10 so'm",
+        mb: "1 mb 10 so'm",
         min: "1 daq 10 so'm",
         price: "10.000 so'm",
         sms: "1 sms 10 so'm",
@@ -159,7 +174,7 @@ List<CompanyModel> companies = [
       ),
        TarifModel(
          "Milliy 15",
-        mb: "5 mg 10 so'm",
+        mb: "5 mb 10 so'm",
         min: "5 daq 10 so'm",
         price: "15.000 so'm",
         sms: "5 sms 10 so'm",
@@ -167,7 +182,7 @@ List<CompanyModel> companies = [
       ),
        TarifModel(
          "Milliy 50",
-        mb: "8000 mg",
+        mb: "8000 mb",
         min: "Cheksiz daq",
         price: "40.000 so'm",
         sms: "3000 sms",
@@ -175,7 +190,7 @@ List<CompanyModel> companies = [
       ),
        TarifModel(
          "Milliy 50",
-        mb: "12000 mg",
+        mb: "12000 mb",
         min: "Cheksiz daq",
         price: "50.000 so'm",
         sms: "5000 sms",
@@ -183,7 +198,7 @@ List<CompanyModel> companies = [
       ),
        TarifModel(
          "Milliy 70",
-        mb: "20000 mg",
+        mb: "20000 mb",
         min: "Cheksiz daq",
         price: "70.000 so'm",
         sms: "5000 sms",
@@ -191,7 +206,7 @@ List<CompanyModel> companies = [
       ),
        TarifModel(
          "Milliy 100",
-        mb: "35000 mg",
+        mb: "35000 mb",
         min: "Cheksiz daq",
         price: "100.000 so'm",
         sms: "5000 sms",

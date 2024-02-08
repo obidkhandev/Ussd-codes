@@ -18,16 +18,16 @@ class CollectionsPage extends StatelessWidget {
           width: width(context) * 0.3,
         ),
       ),
-      body: Padding(
-        padding: const EdgeInsets.all(20.0),
-        child: Column(
-          children: [
-            ...List.generate(
-              5,
-              (index) => TarifWidget(company: company),
-            ),
-          ],
+      body: ListView(
+        padding: const EdgeInsets.symmetric(
+          horizontal: 20,
         ),
+        children: [
+          ...List.generate(
+            company.tariflar.length,
+            (index) => TarifWidget(company: company,index: index,),
+          ),
+        ],
       ),
     );
   }

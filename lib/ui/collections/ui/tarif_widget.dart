@@ -1,19 +1,23 @@
+import 'package:ussd_code/ui/collections/data/model/tarif_model.dart';
 import 'package:ussd_code/ui/collections/ui/widget/tarif_info_sheet.dart';
 import 'package:ussd_code/utils/tools/file_importers.dart';
 import 'package:zoom_tap_animation/zoom_tap_animation.dart';
 
 class TarifWidget extends StatelessWidget {
   final CompanyModel company;
+  final int index;
   const TarifWidget({
     super.key,
     required this.company,
+    required this.index,
   });
 
   @override
   Widget build(BuildContext context) {
+    TarifModel tarif = company.tariflar[index];
     return ZoomTapAnimation(
       onTap: () {
-        showTarifInfo(context, company);
+        showTarifInfo(context, company, index);
       },
       child: Container(
         margin: const EdgeInsets.symmetric(vertical: 10),
@@ -46,7 +50,7 @@ class TarifWidget extends StatelessWidget {
                     width: width(context) * 0.44,
                     child: Center(
                       child: Text(
-                        "Salom 10",
+                        tarif.name,
                         style: TextStyle(
                           fontWeight: FontWeight.w500,
                           fontSize: 20,
@@ -65,9 +69,9 @@ class TarifWidget extends StatelessWidget {
                     child: Column(
                       mainAxisAlignment: MainAxisAlignment.spaceEvenly,
                       children: [
-                        const Text(
-                          "12 ming so'm",
-                          style: TextStyle(
+                        Text(
+                          tarif.price,
+                          style: const TextStyle(
                             fontWeight: FontWeight.w500,
                             fontSize: 18,
                             // color: company.color,

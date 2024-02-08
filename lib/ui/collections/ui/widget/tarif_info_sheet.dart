@@ -1,11 +1,13 @@
 import 'package:animated_snack_bar/animated_snack_bar.dart';
 import 'package:flutter_phone_direct_caller/flutter_phone_direct_caller.dart';
+import 'package:ussd_code/ui/collections/data/model/tarif_model.dart';
 import 'package:ussd_code/ui/collections/ui/widget/tarif_info.dart';
 import 'package:ussd_code/utils/constants/app_snack_bar.dart';
 import 'package:ussd_code/utils/tools/file_importers.dart';
 import 'package:zoom_tap_animation/zoom_tap_animation.dart';
 
-void showTarifInfo(context, CompanyModel company) {
+void showTarifInfo(context, CompanyModel company, int index) {
+  TarifModel tarif = company.tariflar[index];
   showModalBottomSheet(
     context: context,
     builder: (BuildContext context) {
@@ -48,7 +50,7 @@ void showTarifInfo(context, CompanyModel company) {
                             ),
                           ),
                           Text(
-                            "Salom 10",
+                            tarif.name,
                             style: TextStyle(
                               fontSize: 18,
                               fontWeight: FontWeight.w600,
@@ -57,9 +59,9 @@ void showTarifInfo(context, CompanyModel company) {
                           )
                         ],
                       ),
-                      TarifInfo(title: "Daqiqa", subtitle: "1200 daq"),
-                      TarifInfo(title: "Internet", subtitle: "10000 mb"),
-                      TarifInfo(title: "SMS", subtitle: "1200 sms"),
+                      TarifInfo(title: "Daqiqa", subtitle: tarif.min),
+                      TarifInfo(title: "Internet", subtitle: tarif.mb),
+                      TarifInfo(title: "SMS", subtitle: tarif.sms),
                     ],
                   ),
                 ),
@@ -67,7 +69,7 @@ void showTarifInfo(context, CompanyModel company) {
             ),
             ZoomTapAnimation(
               onTap: () async {
-                await FlutterPhoneDirectCaller.callNumber("*100#");
+                await FlutterPhoneDirectCaller.callNumber(tarif.ussd);
                 Navigator.pop(context);
                 AnimatedSnackBar(
                     duration: Duration(seconds: 3),
@@ -88,7 +90,7 @@ void showTarifInfo(context, CompanyModel company) {
                   borderRadius: BorderRadius.circular(8),
                 ),
                 child: Text(
-                  "Ulanish - 12000 so'm",
+                  "Ulanish - ${tarif.price}",
                   style: TextStyle(
                     fontSize: 18,
                     fontWeight: FontWeight.w600,
