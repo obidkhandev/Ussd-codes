@@ -1,10 +1,50 @@
 import 'package:ussd_code/data/models/menu_model.dart';
+import 'package:ussd_code/ui/collections/data/model/collection_model.dart';
 import 'package:ussd_code/ui/collections/data/model/tarif_model.dart';
 import 'package:ussd_code/utils/constants/app_images.dart';
 import 'package:ussd_code/utils/tools/file_importers.dart';
 
+String mobiUzTarifCode = "010200197";
 List<CompanyModel> companies = [
   CompanyModel(
+    allInternetPakets: [
+      CollectionModel(
+        "300 MB",
+        price: "8.000 so'm",
+        expireDay: "Barchasi",
+        ussd: "*171*091*1*$mobiUzTarifCode",
+      ),
+      CollectionModel(
+        "500 MB",
+        price: "9.000 so'm",
+        expireDay: "Barchasi",
+        ussd: "*171*091*7*$mobiUzTarifCode",
+      ),
+      CollectionModel(
+        "1000 MB",
+        price: "11.000 so'm",
+        expireDay: "Barchasi",
+        ussd: "*171*091*2*$mobiUzTarifCode",
+      ),
+      CollectionModel(
+        "2000 MB",
+        price: "17.000 so'm",
+        expireDay: "30 kun",
+        ussd: "*171*091*5*$mobiUzTarifCode",
+      ),
+      CollectionModel(
+        "3000 MB",
+        price: "25.000 so'm",
+        expireDay: "Barchasi",
+        ussd: "*171*091*4*$mobiUzTarifCode",
+      ),
+      CollectionModel(
+        "5000 mb",
+        price: "33.000 so'm",
+        expireDay: "Barchasi",
+        ussd: "*171*091*6*$mobiUzTarifCode",
+      ),
+    ],
     tariflar: [
       TarifModel(
         "Mobi 25",
@@ -63,6 +103,14 @@ List<CompanyModel> companies = [
     color: Colors.red.shade700,
   ),
   CompanyModel(
+    allInternetPakets: [
+      CollectionModel(
+        "300 mb",
+        price: "8.000 so'm",
+        expireDay: "30 kun",
+        ussd: "*171*091*1*$mobiUzTarifCode",
+      ),
+    ],
     tariflar: [
       TarifModel(
         "Zo'r 3",
@@ -121,6 +169,14 @@ List<CompanyModel> companies = [
     color: Colors.yellow.shade800,
   ),
   CompanyModel(
+    allInternetPakets: [
+      CollectionModel(
+        "300 mb",
+        price: "8.000 so'm",
+        expireDay: "30 kun",
+        ussd: "*171*091*1*$mobiUzTarifCode",
+      ),
+    ],
     tariflar: [
       TarifModel(
         "Doimiy 25",
@@ -163,6 +219,14 @@ List<CompanyModel> companies = [
     color: Colors.purple,
   ),
   CompanyModel(
+    allInternetPakets: [
+      CollectionModel(
+        "300 mb",
+        price: "8.000 so'm",
+        expireDay: "30 kun",
+        ussd: "*171*091*1*$mobiUzTarifCode",
+      ),
+    ],
     tariflar: [
       TarifModel(
         "Milliy 10",
@@ -172,40 +236,40 @@ List<CompanyModel> companies = [
         sms: "1 sms 10 so'm",
         ussd: "*111*1*11*1#",
       ),
-       TarifModel(
-         "Milliy 15",
+      TarifModel(
+        "Milliy 15",
         mb: "5 mb 10 so'm",
         min: "5 daq 10 so'm",
         price: "15.000 so'm",
         sms: "5 sms 10 so'm",
         ussd: "*111*1*11*2#",
       ),
-       TarifModel(
-         "Milliy 50",
+      TarifModel(
+        "Milliy 50",
         mb: "8000 mb",
         min: "Cheksiz daq",
         price: "40.000 so'm",
         sms: "3000 sms",
         ussd: "*111*1*11*3#",
       ),
-       TarifModel(
-         "Milliy 50",
+      TarifModel(
+        "Milliy 50",
         mb: "12000 mb",
         min: "Cheksiz daq",
         price: "50.000 so'm",
         sms: "5000 sms",
         ussd: "*111*1*11*4#",
       ),
-       TarifModel(
-         "Milliy 70",
+      TarifModel(
+        "Milliy 70",
         mb: "20000 mb",
         min: "Cheksiz daq",
         price: "70.000 so'm",
         sms: "5000 sms",
         ussd: "*111*1*11*5#",
       ),
-       TarifModel(
-         "Milliy 100",
+      TarifModel(
+        "Milliy 100",
         mb: "35000 mb",
         min: "Cheksiz daq",
         price: "100.000 so'm",

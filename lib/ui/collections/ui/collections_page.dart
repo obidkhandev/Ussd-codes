@@ -39,48 +39,54 @@ class CollectionsPage extends StatelessWidget {
               ),
             if (!isTarif)
               DefaultTabController(
-                length: 3,
+                length: 1,
                 child: Column(
                   children: [
                     TabBar(
                       indicatorColor: company.color,
                       tabs: [
-                        Tab(text: "1 kunlik"),
-                        Tab(text: "7 kunlik"),
-                        Tab(text: "30 kunlik"),
+                        Tab(
+                          text: company.allInternetPakets[0].expireDay,
+                        )
                       ],
                     ),
                     SizedBox(
                       height: height(context) * 0.8,
                       child: TabBarView(
                         children: [
-                          ListView(children: [
-                            ...List.generate(
-                              3,
-                              (index) => CollectionWidget(
-                                company: company,
-                                index: 0,
+                          ListView(
+                            children: [
+                              ...List.generate(
+                                company.allInternetPakets.length,
+                                (index) => CollectionWidget(
+                                  company: company,
+                                  collection: company.allInternetPakets[index],
+                                ),
                               ),
-                            ),
-                          ], ),
-                           ListView(children: [
-                            ...List.generate(
-                              3,
-                              (index) => CollectionWidget(
-                                company: company,
-                                index: 0,
-                              ),
-                            ),
-                          ], ),
-                           ListView(children: [
-                            ...List.generate(
-                              3,
-                              (index) => CollectionWidget(
-                                company: company,
-                                index: 0,
-                              ),
-                            ),
-                          ], )
+                            ],
+                          ),
+                          // ListView(
+                          //   children: [
+                          //     ...List.generate(
+                          //       3,
+                          //       (index) => CollectionWidget(
+                          //         company: company,
+                          //         index: 0,
+                          //       ),
+                          //     ),
+                          //   ],
+                          // ),
+                          // ListView(
+                          //   children: [
+                          //     ...List.generate(
+                          //       3,
+                          //       (index) => CollectionWidget(
+                          //         company: company,
+                          //         index: 0,
+                          //       ),
+                          //     ),
+                          //   ],
+                          // )
                         ],
                       ),
                     ),

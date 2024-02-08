@@ -1,24 +1,22 @@
-import 'package:ussd_code/ui/collections/data/model/tarif_model.dart';
+import 'package:ussd_code/ui/collections/data/model/collection_model.dart';
 import 'package:ussd_code/ui/collections/ui/widget/tarif_info.dart';
-import 'package:ussd_code/ui/collections/ui/widget/tarif_info_sheet.dart';
 import 'package:zoom_tap_animation/zoom_tap_animation.dart';
 import '../../../../utils/tools/file_importers.dart';
 
 class CollectionWidget extends StatelessWidget {
   final CompanyModel company;
-  final int index;
+  final CollectionModel collection;
   const CollectionWidget({
     super.key,
     required this.company,
-    required this.index,
+    required this.collection,
   });
 
   @override
   Widget build(BuildContext context) {
-    TarifModel tarif = company.tariflar[index];
     return ZoomTapAnimation(
       onTap: () {
-        showTarifInfo(context, company, index);
+        // showTarifInfo(context, company, );
       },
       child: Container(
         margin: const EdgeInsets.symmetric(vertical: 10),
@@ -38,7 +36,7 @@ class CollectionWidget extends StatelessWidget {
                     width: width(context) * 0.28,
                     child: Center(
                       child: Text(
-                        tarif.name,
+                        collection.amount,
                         style: TextStyle(
                           fontWeight: FontWeight.w500,
                           fontSize: 20,
@@ -62,17 +60,17 @@ class CollectionWidget extends StatelessWidget {
                         children: [
                           TarifInfo(
                             title: "Narxi",
-                            subtitle: "8000",
+                            subtitle: collection.price,
                             isTarif: false,
                           ),
                           TarifInfo(
                             title: "Muddati",
-                            subtitle: "7 kun",
+                            subtitle: collection.expireDay,
                             isTarif: false,
                           ),
                           const Divider(height: 1, color: Colors.grey),
                           Text(
-                            tarif.price,
+                            collection.ussd,
                             style: const TextStyle(
                               fontWeight: FontWeight.w500,
                               fontSize: 18,
