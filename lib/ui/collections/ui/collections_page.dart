@@ -39,31 +39,38 @@ class CollectionsPage extends StatelessWidget {
               ),
             if (!isTarif)
               DefaultTabController(
-                length: 1,
+                length: company.allInternetPakets.length,
                 child: Column(
                   children: [
                     TabBar(
                       indicatorColor: company.color,
                       tabs: [
-                        Tab(
-                          text: company.allInternetPakets[0][0].expireDay,
-                        )
+                        ...List.generate(
+                            company.allInternetPakets.length,
+                            (index) => Tab(
+                                  text: company
+                                      .allInternetPakets[index][0].expireDay,
+                                ))
                       ],
                     ),
                     SizedBox(
                       height: height(context) * 0.8,
                       child: TabBarView(
                         children: [
-                          ListView(
-                            children: [
-                              ...List.generate(
-                                company.allInternetPakets.length,
-                                (index) => CollectionWidget(
-                                  company: company,
-                                  collection: company.allInternetPakets[index][index],
+                          ...List.generate(
+                            company.allInternetPakets.length,
+                            (paketIndex) => ListView(
+                              children: [
+                                ...List.generate(
+                                  company.allInternetPakets[paketIndex].length,
+                                  (index) => CollectionWidget(
+                                      company: company,
+                                      collection:
+                                          company.allInternetPakets[paketIndex]
+                                              [index]),
                                 ),
-                              ),
-                            ],
+                              ],
+                            ),
                           ),
                           // ListView(
                           //   children: [

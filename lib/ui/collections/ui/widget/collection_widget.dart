@@ -21,7 +21,7 @@ class CollectionWidget extends StatelessWidget {
           builder: (BuildContext context) {
             return Container(
               padding: const EdgeInsets.all(12),
-              height: height(context) * 0.3,
+              height: height(context) * 0.32,
               width: double.infinity,
               decoration: const BoxDecoration(
                   color: Colors.white,

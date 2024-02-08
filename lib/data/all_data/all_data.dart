@@ -1,5 +1,4 @@
 import 'package:ussd_code/data/models/menu_model.dart';
-import 'package:ussd_code/ui/collections/data/model/collection_model.dart';
 import 'package:ussd_code/ui/collections/data/model/tarif_model.dart';
 import 'package:ussd_code/utils/constants/app_images.dart';
 import 'package:ussd_code/utils/tools/file_importers.dart';
@@ -356,63 +355,63 @@ List<CompanyModel> companies = [
           expireDay: "30 kun",
           ussd: "$uzmobilePaket*1#",
         ),
-         CollectionModel(
+        CollectionModel(
           "3000 mb",
           price: "24.000 so'm",
           expireDay: "30 kun",
           ussd: "$uzmobilePaket*2#",
         ),
-         CollectionModel(
+        CollectionModel(
           "5000 mb",
           price: "32.000 so'm",
           expireDay: "30 kun",
           ussd: "$uzmobilePaket*3#",
         ),
-         CollectionModel(
+        CollectionModel(
           "8000 mb",
           price: "41.000 so'm",
           expireDay: "30 kun",
           ussd: "$uzmobilePaket*5#",
         ),
-         CollectionModel(
+        CollectionModel(
           "12000 mb",
           price: "50.000 so'm",
           expireDay: "30 kun",
           ussd: "$uzmobilePaket*6#",
         ),
-         CollectionModel(
+        CollectionModel(
           "20000 mb",
           price: "65.000 so'm",
           expireDay: "30 kun",
           ussd: "$uzmobilePaket*7#",
         ),
-         CollectionModel(
+        CollectionModel(
           "30000 mb",
           price: "10.000 so'm",
           expireDay: "30 kun",
           ussd: "$uzmobilePaket*8#",
         ),
-         CollectionModel(
+        CollectionModel(
           "50000 mb",
           price: "85.000 so'm",
           expireDay: "30 kun",
           ussd: "$uzmobilePaket*9#",
         ),
-         CollectionModel(
+        CollectionModel(
           "75000 mb",
           price: "110.000 so'm",
           expireDay: "30 kun",
           ussd: "$uzmobilePaket*10#",
         ),
       ],
-[
-  CollectionModel(
+      [
+        CollectionModel(
           "75000 mb",
           price: "110.000 so'm",
           expireDay: "30 kun",
           ussd: "$uzmobilePaket*10#",
         ),
-]
+      ]
     ],
     tariflar: [
       TarifModel(
@@ -486,14 +485,6 @@ List<MenuModel> menu = [
     title: "Internet to'plamlar",
     icon: const Icon(
       Icons.mobiledata_off,
-      color: Colors.white,
-      size: 32,
-    ),
-  ),
-  MenuModel(
-    title: "Daqiqa to'plamlar",
-    icon: const Icon(
-      Icons.timer,
       color: Colors.white,
       size: 32,
     ),
