@@ -1,3 +1,5 @@
+import 'package:ussd_code/ui/collections/ui/collections_page.dart';
+
 import '../../../../utils/tools/file_importers.dart';
 
 class CompanyBox extends StatelessWidget {
@@ -17,7 +19,13 @@ class CompanyBox extends StatelessWidget {
               model: menu[index],
               color: company.color,
               onTap: () {
-                Navigator.pushNamed(context, RouteName.internetCollections,arguments: company);
+                Navigator.push(
+                  context,
+                  MaterialPageRoute(
+                    builder: (context) =>
+                        CollectionsPage(company: company, isTarif: index == 0),
+                  ),
+                );
               },
             ),
           ),

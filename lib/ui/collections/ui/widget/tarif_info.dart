@@ -3,12 +3,17 @@ import 'package:flutter/material.dart';
 class TarifInfo extends StatelessWidget {
   final String title;
   final String subtitle;
-  const TarifInfo({super.key, required this.title, required this.subtitle});
+  final bool isTarif;
+  const TarifInfo(
+      {this.isTarif = true,
+      super.key,
+      required this.title,
+      required this.subtitle});
 
   @override
   Widget build(BuildContext context) {
     return Container(
-      padding: const EdgeInsets.only(top: 8),
+      padding: EdgeInsets.only(top: isTarif ? 8 : 2),
       child: Row(
         mainAxisAlignment: MainAxisAlignment.spaceBetween,
         children: [

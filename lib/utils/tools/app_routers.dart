@@ -16,10 +16,10 @@ class AppRouter {
         return MaterialPageRoute(
           builder: (_) => const HomePage(),
         );
-       case RouteName.internetCollections:
-        return MaterialPageRoute(
-          builder: (_) => CollectionsPage(company: args as CompanyModel,),
-        );
+      //  case RouteName.internetCollections:
+      //   return MaterialPageRoute(
+      //     builder: (_) => CollectionsPage(company: args as CompanyModel,),
+      //   );
       default:
         return MaterialPageRoute(
           builder: (_) => const Scaffold(),
