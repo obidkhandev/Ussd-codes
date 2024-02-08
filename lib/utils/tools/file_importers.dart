@@ -6,3 +6,6 @@ export 'package:ussd_code/data/models/company_model.dart';
 export 'package:ussd_code/ui/home/ui/widget/carusel_widget.dart';
 export 'package:ussd_code/ui/home/ui/widget/menu_widget.dart';
 export 'package:ussd_code/utils/tools/app_routers.dart';
+export 'package:animated_snack_bar/animated_snack_bar.dart';
+export 'package:flutter_phone_direct_caller/flutter_phone_direct_caller.dart';
+export 'package:ussd_code/ui/collections/data/model/collection_model.dart';

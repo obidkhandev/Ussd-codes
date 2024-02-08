@@ -1,3 +1,5 @@
+// ignore_for_file: use_build_context_synchronously
+
 import 'package:animated_snack_bar/animated_snack_bar.dart';
 import 'package:flutter_phone_direct_caller/flutter_phone_direct_caller.dart';
 import 'package:ussd_code/ui/collections/data/model/tarif_model.dart';
@@ -42,7 +44,7 @@ void showTarifInfo(context, CompanyModel company, int index) {
                       Row(
                         mainAxisAlignment: MainAxisAlignment.spaceBetween,
                         children: [
-                          Text(
+                          const Text(
                             "Ta'rif nomi",
                             style: TextStyle(
                               fontSize: 18,
@@ -70,7 +72,7 @@ void showTarifInfo(context, CompanyModel company, int index) {
             ZoomTapAnimation(
               onTap: () async {
                 await FlutterPhoneDirectCaller.callNumber(tarif.ussd);
-                Navigator.pop(context);
+                Navigator.pop(context);                
                 AnimatedSnackBar(
                     duration: Duration(seconds: 3),
                     builder: (context) {
@@ -81,7 +83,7 @@ void showTarifInfo(context, CompanyModel company, int index) {
                     }).show(context);
               },
               child: Container(
-                margin: EdgeInsets.all(7),
+                margin: const EdgeInsets.all(7),
                 height: height(context) * 0.07,
                 width: width(context),
                 alignment: Alignment.center,
@@ -91,7 +93,7 @@ void showTarifInfo(context, CompanyModel company, int index) {
                 ),
                 child: Text(
                   "Ulanish - ${tarif.price}",
-                  style: TextStyle(
+                  style: const TextStyle(
                     fontSize: 18,
                     fontWeight: FontWeight.w600,
                     color: Colors.white,

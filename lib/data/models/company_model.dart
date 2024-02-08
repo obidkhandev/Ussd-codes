@@ -1,4 +1,3 @@
-import 'package:ussd_code/ui/collections/data/model/collection_model.dart';
 import 'package:ussd_code/ui/collections/data/model/tarif_model.dart';
 import 'package:ussd_code/utils/tools/file_importers.dart';
 
@@ -7,7 +6,7 @@ class CompanyModel {
   final Color color;
   final String companyLogo;
   final List<TarifModel> tariflar;
-  final List<CollectionModel> allInternetPakets;
+  final List<List<CollectionModel>> allInternetPakets;
 
   CompanyModel({
     required this.allInternetPakets,

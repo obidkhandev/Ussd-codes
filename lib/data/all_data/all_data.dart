@@ -5,45 +5,58 @@ import 'package:ussd_code/utils/constants/app_images.dart';
 import 'package:ussd_code/utils/tools/file_importers.dart';
 
 String mobiUzTarifCode = "010200197";
+String beelinePaket = "*3644#";
+String ucellPaket = "*19068#";
+String uzmobilePaket = "111*2*9";
 List<CompanyModel> companies = [
   CompanyModel(
     allInternetPakets: [
-      CollectionModel(
-        "300 MB",
-        price: "8.000 so'm",
-        expireDay: "Barchasi",
-        ussd: "*171*091*1*$mobiUzTarifCode",
-      ),
-      CollectionModel(
-        "500 MB",
-        price: "9.000 so'm",
-        expireDay: "Barchasi",
-        ussd: "*171*091*7*$mobiUzTarifCode",
-      ),
-      CollectionModel(
-        "1000 MB",
-        price: "11.000 so'm",
-        expireDay: "Barchasi",
-        ussd: "*171*091*2*$mobiUzTarifCode",
-      ),
-      CollectionModel(
-        "2000 MB",
-        price: "17.000 so'm",
-        expireDay: "30 kun",
-        ussd: "*171*091*5*$mobiUzTarifCode",
-      ),
-      CollectionModel(
-        "3000 MB",
-        price: "25.000 so'm",
-        expireDay: "Barchasi",
-        ussd: "*171*091*4*$mobiUzTarifCode",
-      ),
-      CollectionModel(
-        "5000 mb",
-        price: "33.000 so'm",
-        expireDay: "Barchasi",
-        ussd: "*171*091*6*$mobiUzTarifCode",
-      ),
+      [
+        CollectionModel(
+          "300 MB",
+          price: "8.000 so'm",
+          expireDay: "Barchasi",
+          ussd: "*171*091*1*$mobiUzTarifCode",
+        ),
+        CollectionModel(
+          "500 MB",
+          price: "9.000 so'm",
+          expireDay: "Barchasi",
+          ussd: "*171*091*7*$mobiUzTarifCode",
+        ),
+        CollectionModel(
+          "1000 MB",
+          price: "11.000 so'm",
+          expireDay: "Barchasi",
+          ussd: "*171*091*2*$mobiUzTarifCode",
+        ),
+        CollectionModel(
+          "2000 MB",
+          price: "17.000 so'm",
+          expireDay: "30 kun",
+          ussd: "*171*091*5*$mobiUzTarifCode",
+        ),
+        CollectionModel(
+          "3000 MB",
+          price: "25.000 so'm",
+          expireDay: "Barchasi",
+          ussd: "*171*091*4*$mobiUzTarifCode",
+        ),
+        CollectionModel(
+          "5000 mb",
+          price: "33.000 so'm",
+          expireDay: "Barchasi",
+          ussd: "*171*091*6*$mobiUzTarifCode",
+        ),
+      ],
+      [
+        CollectionModel(
+          "5000 mb",
+          price: "33.000 so'm",
+          expireDay: "7 kun",
+          ussd: "*171*091*6*$mobiUzTarifCode",
+        ),
+      ],
     ],
     tariflar: [
       TarifModel(
@@ -104,12 +117,82 @@ List<CompanyModel> companies = [
   ),
   CompanyModel(
     allInternetPakets: [
-      CollectionModel(
-        "300 mb",
-        price: "8.000 so'm",
-        expireDay: "30 kun",
-        ussd: "*171*091*1*$mobiUzTarifCode",
-      ),
+      [
+        CollectionModel(
+          "1 GB",
+          price: "10.000 so'm",
+          expireDay: "30 kun",
+          ussd: "*1*01*$beelinePaket",
+        ),
+        CollectionModel(
+          "2 GB",
+          price: "17.000 so'm",
+          expireDay: "30 kun",
+          ussd: "*1*02*$beelinePaket",
+        ),
+        CollectionModel(
+          "5 GB",
+          price: "30.000 so'm",
+          expireDay: "30 kun",
+          ussd: "*1*05*$beelinePaket",
+        ),
+        CollectionModel(
+          "10 GB",
+          price: "50.000 so'm",
+          expireDay: "30 kun",
+          ussd: "*1*10*$beelinePaket",
+        ),
+        CollectionModel(
+          "20 GB",
+          price: "65.000 so'm",
+          expireDay: "30 kun",
+          ussd: "*1*30*$beelinePaket",
+        ),
+        CollectionModel(
+          "30 GB",
+          price: "75.000 so'm",
+          expireDay: "30 kun",
+          ussd: "*1*30*$beelinePaket",
+        ),
+        CollectionModel(
+          "50 GB",
+          price: "90.000 so'm",
+          expireDay: "30 kun",
+          ussd: "*1*75*$beelinePaket",
+        ),
+        CollectionModel(
+          "100 GB",
+          price: "130.000 so'm",
+          expireDay: "30 kun",
+          ussd: "*1*100*$beelinePaket",
+        ),
+        CollectionModel(
+          "150 GB",
+          price: "150.000 so'm",
+          expireDay: "30 kun",
+          ussd: "*1*150*$beelinePaket",
+        ),
+      ],
+      [
+        CollectionModel(
+          "1.5 GB",
+          price: "10.000 so'm",
+          expireDay: "7 kun",
+          ussd: "*1*0*5#",
+        ),
+        CollectionModel(
+          "3 GB",
+          price: "17.000 so'm",
+          expireDay: "7 kun",
+          ussd: "*1*0*6#",
+        ),
+        CollectionModel(
+          "7 GB",
+          price: "25.000 so'm",
+          expireDay: "7 kun",
+          ussd: "*1*0*7#",
+        ),
+      ],
     ],
     tariflar: [
       TarifModel(
@@ -170,12 +253,58 @@ List<CompanyModel> companies = [
   ),
   CompanyModel(
     allInternetPakets: [
-      CollectionModel(
-        "300 mb",
-        price: "8.000 so'm",
-        expireDay: "30 kun",
-        ussd: "*171*091*1*$mobiUzTarifCode",
-      ),
+      [
+        CollectionModel(
+          "1000 MB",
+          price: "8.900 so'm",
+          expireDay: "30 kun",
+          ussd: "*558*1*1$ucellPaket",
+        ),
+        CollectionModel(
+          "1500 MB",
+          price: "13.00 so'm",
+          expireDay: "30 kun",
+          ussd: "*558*1*2$ucellPaket",
+        ),
+        CollectionModel(
+          "2000 MB",
+          price: "15.000 so'm",
+          expireDay: "30 kun",
+          ussd: "*558*1*3$ucellPaket",
+        ),
+        CollectionModel(
+          "4000 MB",
+          price: "25.000 so'm",
+          expireDay: "30 kun",
+          ussd: "*558*1*4$ucellPaket",
+        ),
+        CollectionModel(
+          "7000 MB",
+          price: "35.000 so'm",
+          expireDay: "30 kun",
+          ussd: "*558*1*5$ucellPaket",
+        ),
+        CollectionModel(
+          "10000 MB",
+          price: "45.000 so'm",
+          expireDay: "30 kun",
+          ussd: "*558*1*13$ucellPaket",
+        ),
+        CollectionModel(
+          "20000 MB",
+          price: "65.000 so'm",
+          expireDay: "30 kun",
+          ussd: "*558*1*7$ucellPaket",
+        ),
+      ],
+      [
+        CollectionModel(
+          "4000 mb",
+          price: "25.000 so'm",
+          expireDay: "7 kun",
+          ussd: "*558*4*1$ucellPaket",
+        ),
+      ]
     ],
     tariflar: [
       TarifModel(
@@ -220,12 +349,70 @@ List<CompanyModel> companies = [
   ),
   CompanyModel(
     allInternetPakets: [
-      CollectionModel(
-        "300 mb",
-        price: "8.000 so'm",
-        expireDay: "30 kun",
-        ussd: "*171*091*1*$mobiUzTarifCode",
-      ),
+      [
+        CollectionModel(
+          "1500 mb",
+          price: "10.000 so'm",
+          expireDay: "30 kun",
+          ussd: "$uzmobilePaket*1#",
+        ),
+         CollectionModel(
+          "3000 mb",
+          price: "24.000 so'm",
+          expireDay: "30 kun",
+          ussd: "$uzmobilePaket*2#",
+        ),
+         CollectionModel(
+          "5000 mb",
+          price: "32.000 so'm",
+          expireDay: "30 kun",
+          ussd: "$uzmobilePaket*3#",
+        ),
+         CollectionModel(
+          "8000 mb",
+          price: "41.000 so'm",
+          expireDay: "30 kun",
+          ussd: "$uzmobilePaket*5#",
+        ),
+         CollectionModel(
+          "12000 mb",
+          price: "50.000 so'm",
+          expireDay: "30 kun",
+          ussd: "$uzmobilePaket*6#",
+        ),
+         CollectionModel(
+          "20000 mb",
+          price: "65.000 so'm",
+          expireDay: "30 kun",
+          ussd: "$uzmobilePaket*7#",
+        ),
+         CollectionModel(
+          "30000 mb",
+          price: "10.000 so'm",
+          expireDay: "30 kun",
+          ussd: "$uzmobilePaket*8#",
+        ),
+         CollectionModel(
+          "50000 mb",
+          price: "85.000 so'm",
+          expireDay: "30 kun",
+          ussd: "$uzmobilePaket*9#",
+        ),
+         CollectionModel(
+          "75000 mb",
+          price: "110.000 so'm",
+          expireDay: "30 kun",
+          ussd: "$uzmobilePaket*10#",
+        ),
+      ],
+[
+  CollectionModel(
+          "75000 mb",
+          price: "110.000 so'm",
+          expireDay: "30 kun",
+          ussd: "$uzmobilePaket*10#",
+        ),
+]
     ],
     tariflar: [
       TarifModel(

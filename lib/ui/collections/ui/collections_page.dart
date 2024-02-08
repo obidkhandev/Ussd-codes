@@ -46,7 +46,7 @@ class CollectionsPage extends StatelessWidget {
                       indicatorColor: company.color,
                       tabs: [
                         Tab(
-                          text: company.allInternetPakets[0].expireDay,
+                          text: company.allInternetPakets[0][0].expireDay,
                         )
                       ],
                     ),
@@ -60,7 +60,7 @@ class CollectionsPage extends StatelessWidget {
                                 company.allInternetPakets.length,
                                 (index) => CollectionWidget(
                                   company: company,
-                                  collection: company.allInternetPakets[index],
+                                  collection: company.allInternetPakets[index][index],
                                 ),
                               ),
                             ],
