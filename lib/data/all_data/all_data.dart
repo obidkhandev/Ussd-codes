@@ -9,6 +9,10 @@ String ucellPaket = "*19068#";
 String uzmobilePaket = "111*2*9";
 List<CompanyModel> companies = [
   CompanyModel(
+    tarifDetectorCode: "*100#",
+    minuteBalance: "*103#",
+    internetBalance: "*102#",
+    smsBalance: "*104#",
     allInternetPakets: [
       [
         CollectionModel(
@@ -115,6 +119,10 @@ List<CompanyModel> companies = [
     color: Colors.red.shade700,
   ),
   CompanyModel(
+    tarifDetectorCode: "*102#",
+    minuteBalance: "*106#",
+    internetBalance: "*103#",
+    smsBalance: "*105#",
     allInternetPakets: [
       [
         CollectionModel(
@@ -251,6 +259,10 @@ List<CompanyModel> companies = [
     color: Colors.yellow.shade800,
   ),
   CompanyModel(
+    tarifDetectorCode: "*200#",
+    minuteBalance: "*400#",
+    internetBalance: "*400#",
+    smsBalance: "*400#",
     allInternetPakets: [
       [
         CollectionModel(
@@ -347,6 +359,10 @@ List<CompanyModel> companies = [
     color: Colors.purple,
   ),
   CompanyModel(
+    tarifDetectorCode: "*105#",
+    minuteBalance: "*100*2#",
+    internetBalance: "*100*2#",
+    smsBalance: "*100*2#",
     allInternetPakets: [
       [
         CollectionModel(
@@ -484,19 +500,39 @@ List<MenuModel> menu = [
   MenuModel(
     title: "Internet to'plamlar",
     icon: const Icon(
-      Icons.mobiledata_off,
+      Icons.four_g_plus_mobiledata_outlined,
       color: Colors.white,
       size: 32,
     ),
   ),
   MenuModel(
-    title: "Balansni tekshirish",
-    icon: const Icon(
-      Icons.wallet,
-      color: Colors.white,
-      size: 32,
-    ),
-  ),
+      title: "Tarifni aniqlash",
+      icon: Icon(
+        Icons.wallet,
+        color: Colors.white,
+        size: 32,
+      )),
+  MenuModel(
+      title: "Daqiqa qoldig'ini aniqlash",
+      icon: Icon(
+        Icons.manage_history_outlined,
+        color: Colors.white,
+        size: 32,
+      )),
+  MenuModel(
+      title: "Internet qoldig'ini aniqlash",
+      icon: Icon(
+        Icons.mobiledata_off_rounded,
+        color: Colors.white,
+        size: 32,
+      )),
+  MenuModel(
+      title: "Sms qoldig'ini aniqlash",
+      icon: Icon(
+        Icons.wallet,
+        color: Colors.white,
+        size: 32,
+      )),
   MenuModel(
     title: "Raqamni aniqlash",
     icon: const Icon(
