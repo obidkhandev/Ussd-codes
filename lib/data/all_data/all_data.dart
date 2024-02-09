@@ -533,12 +533,4 @@ List<MenuModel> menu = [
         color: Colors.white,
         size: 32,
       )),
-  MenuModel(
-    title: "Raqamni aniqlash",
-    icon: const Icon(
-      Icons.call,
-      color: Colors.white,
-      size: 32,
-    ),
-  ),
 ];

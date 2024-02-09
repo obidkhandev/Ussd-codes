@@ -9,3 +9,5 @@ export 'package:ussd_code/utils/tools/app_routers.dart';
 export 'package:animated_snack_bar/animated_snack_bar.dart';
 export 'package:flutter_phone_direct_caller/flutter_phone_direct_caller.dart';
 export 'package:ussd_code/ui/collections/data/model/collection_model.dart';
+export 'package:ussd_code/ui/collections/ui/collections_page.dart';
+export 'package:ussd_code/utils/constants/app_snack_bar.dart';

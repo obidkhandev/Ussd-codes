@@ -1,7 +1,5 @@
 // ignore_for_file: use_build_context_synchronously
 
-import 'package:animated_snack_bar/animated_snack_bar.dart';
-import 'package:flutter_phone_direct_caller/flutter_phone_direct_caller.dart';
 import 'package:ussd_code/ui/collections/data/model/tarif_model.dart';
 import 'package:ussd_code/ui/collections/ui/widget/tarif_info.dart';
 import 'package:ussd_code/utils/constants/app_snack_bar.dart';
