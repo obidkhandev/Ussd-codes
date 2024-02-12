@@ -1,6 +1,4 @@
-import 'package:ussd_code/data/models/company_model.dart';
 import 'package:ussd_code/ui/home/ui/home_page.dart';
-import 'package:ussd_code/ui/collections/ui/collections_page.dart';
 import 'package:ussd_code/utils/tools/file_importers.dart';
 
 class RouteName {
@@ -10,7 +8,7 @@ class RouteName {
 
 class AppRouter {
   static Route generateRoute(RouteSettings settings) {
-    var args = settings.arguments;
+    // var args = settings.arguments;
     switch (settings.name) {
       case RouteName.home:
         return MaterialPageRoute(
