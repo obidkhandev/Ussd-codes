@@ -1,4 +1,3 @@
-import 'package:ussd_code/utils/tools/app_routers.dart';
 import 'package:ussd_code/utils/tools/file_importers.dart';
 
 class App extends StatelessWidget {
