@@ -4,7 +4,6 @@ import 'package:ussd_code/utils/constants/app_images.dart';
 import 'package:ussd_code/utils/tools/file_importers.dart';
 
 String mobiUzTarifCode = "010200197";
-String beelinePaket = "*3644#";
 String ucellPaket = "*19068#";
 String uzmobilePaket = "111*2*9";
 List<CompanyModel> companies = [
@@ -381,51 +380,75 @@ List<CompanyModel> companies = [
     allInternetPakets: [
       [
         CollectionModel(
-          "1000 MB",
-          price: "8.900 so'm",
+          "1 GB",
+          price: "9.000 so'm",
           expireDay: "30 kun",
           ussd: "*558*1*1$ucellPaket",
         ),
         CollectionModel(
-          "1500 MB",
-          price: "13.00 so'm",
+          "2 GB",
+          price: "15.00 so'm",
           expireDay: "30 kun",
           ussd: "*558*1*2$ucellPaket",
         ),
         CollectionModel(
-          "2000 MB",
-          price: "15.000 so'm",
+          "5 GB",
+          price: "25.000 so'm",
           expireDay: "30 kun",
           ussd: "*558*1*3$ucellPaket",
         ),
         CollectionModel(
-          "4000 MB",
-          price: "25.000 so'm",
-          expireDay: "30 kun",
-          ussd: "*558*1*4$ucellPaket",
-        ),
-        CollectionModel(
-          "7000 MB",
+          "8 GB",
           price: "35.000 so'm",
           expireDay: "30 kun",
           ussd: "*558*1*5$ucellPaket",
         ),
         CollectionModel(
-          "10000 MB",
+          "10 GB",
           price: "45.000 so'm",
           expireDay: "30 kun",
           ussd: "*558*1*13$ucellPaket",
         ),
         CollectionModel(
-          "20000 MB",
+          "20 GB",
           price: "65.000 so'm",
+          expireDay: "30 kun",
+          ussd: "*558*1*7$ucellPaket",
+        ),
+        CollectionModel(
+          "30 GB",
+          price: "75.000 so'm",
+          expireDay: "30 kun",
+          ussd: "*558*1*7$ucellPaket",
+        ),
+        CollectionModel(
+          "50 GB",
+          price: "85.000 so'm",
+          expireDay: "30 kun",
+          ussd: "*558*1*7$ucellPaket",
+        ),
+        CollectionModel(
+          "70 GB",
+          price: "100.000 so'm",
+          expireDay: "30 kun",
+          ussd: "*558*1*7$ucellPaket",
+        ),
+        CollectionModel(
+          "100 GB",
+          price: "125.000 so'm",
           expireDay: "30 kun",
           ussd: "*558*1*7$ucellPaket",
         ),
       ],
       [
         CollectionModel(
-          "4000 mb",
+          "1 GB",
+          price: "10.000 so'm",
+          expireDay: "7 kun",
+          ussd: "*558*4*1$ucellPaket",
+        ),
+        CollectionModel(
+          "4 GB",
           price: "25.000 so'm",
           expireDay: "7 kun",
           ussd: "*558*4*1$ucellPaket",
@@ -622,28 +645,28 @@ List<MenuModel> menu = [
   ),
   MenuModel(
       title: "Tarifni aniqlash",
-      icon: Icon(
+      icon: const Icon(
         Icons.wallet,
         color: Colors.white,
         size: 32,
       )),
   MenuModel(
       title: "Daqiqa qoldig'ini aniqlash",
-      icon: Icon(
+      icon: const Icon(
         Icons.manage_history_outlined,
         color: Colors.white,
         size: 32,
       )),
   MenuModel(
       title: "Internet qoldig'ini aniqlash",
-      icon: Icon(
+      icon: const Icon(
         Icons.mobiledata_off_rounded,
         color: Colors.white,
         size: 32,
       )),
   MenuModel(
       title: "Sms qoldig'ini aniqlash",
-      icon: Icon(
+      icon: const Icon(
         Icons.wallet,
         color: Colors.white,
         size: 32,
