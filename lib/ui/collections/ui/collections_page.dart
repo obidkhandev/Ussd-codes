@@ -11,6 +11,7 @@ class CollectionsPage extends StatelessWidget {
     required this.isTarif,
   });
 
+
   @override
   Widget build(BuildContext context) {
     return Scaffold(
@@ -50,7 +51,8 @@ class CollectionsPage extends StatelessWidget {
                             (index) => Tab(
                                   text: company
                                       .allInternetPakets[index][0].expireDay,
-                                ))
+                                ),
+                            ),
                       ],
                     ),
                     SizedBox(
@@ -67,7 +69,7 @@ class CollectionsPage extends StatelessWidget {
                                       company: company,
                                       collection:
                                           company.allInternetPakets[paketIndex]
-                                              [index]),
+                                              [index],),
                                 ),
                               ],
                             ),
