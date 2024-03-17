@@ -75,12 +75,7 @@ List<CompanyModel> companies = [
           expireDay: "30 kun",
           ussd: "*171*019*10*$mobiUzTarifCode",
         ),
-        CollectionModel(
-          "50 GB",
-          price: "75.000 so'm",
-          expireDay: "30 kun",
-          ussd: "*171*019*10*$mobiUzTarifCode",
-        ),
+
       ],
       [
         CollectionModel(
@@ -108,25 +103,25 @@ List<CompanyModel> companies = [
           ussd: "*102*1*1000#",
         ),
         CollectionModel(
-          "2000 MB",
+          "2.000 MB",
           price: "9.000 so'm",
           expireDay: "1 kun",
           ussd: "*102*1*2000#",
         ),
         CollectionModel(
-          "3000 MB",
+          "3.000 MB",
           price: "12.000 so'm",
           expireDay: "1 kun",
           ussd: "*102*1*3000#",
         ),
         CollectionModel(
-          "5000 MB",
+          "5.000 MB",
           price: "16.500 so'm",
           expireDay: "1 kun",
           ussd: "*102*1*5000#",
         ),
         CollectionModel(
-          "10000 MB",
+          "10.000 MB",
           price: "25.000 so'm",
           expireDay: "1 kun",
           ussd: "*102*1*10000#",
@@ -267,6 +262,7 @@ List<CompanyModel> companies = [
     image: [
       AppImage.mobiuzBanner1,
       AppImage.mobiuzBanner2,
+      AppImage.mobiuzBanner3
     ],
     color: Colors.red.shade700,
   ),
@@ -523,6 +519,7 @@ List<CompanyModel> companies = [
     image: [
       AppImage.bBanner1,
       AppImage.bBanner2,
+      AppImage.bBanner3,
     ],
     color: Colors.yellow.shade800,
   ),
@@ -738,6 +735,7 @@ List<CompanyModel> companies = [
     image: [
       AppImage.ucellBanner1,
       AppImage.ucellBanner2,
+      AppImage.ucellBanner3,
     ],
     color: Colors.purple,
   ),
@@ -878,8 +876,6 @@ List<CompanyModel> companies = [
         sms: "2.000 sms",
         ussd: "*111*1*11*14#",
       ),
-
-
       TarifModel(
         "Milliy 10",
         mb: "1 mb 10 so'm",
@@ -933,6 +929,8 @@ List<CompanyModel> companies = [
     image: [
       AppImage.uzmobileBanner1,
       AppImage.uzmobileBanner2,
+      AppImage.uzmobileBanner3,
+
     ],
     color: Colors.blue,
   ),
@@ -950,7 +948,7 @@ List<MenuModel> menu = [
   MenuModel(
     title: "Internet to'plamlar",
     icon: const Icon(
-      Icons.four_g_plus_mobiledata_outlined,
+      Icons.language,
       color: Colors.white,
       size: 32,
     ),
@@ -965,7 +963,7 @@ List<MenuModel> menu = [
   MenuModel(
       title: "Daqiqa qoldig'ini aniqlash",
       icon: const Icon(
-        Icons.manage_history_outlined,
+        Icons.phone_in_talk,
         color: Colors.white,
         size: 32,
       )),
@@ -979,7 +977,7 @@ List<MenuModel> menu = [
   MenuModel(
       title: "Sms qoldig'ini aniqlash",
       icon: const Icon(
-        Icons.wallet,
+        Icons.comment,
         color: Colors.white,
         size: 32,
       ),
