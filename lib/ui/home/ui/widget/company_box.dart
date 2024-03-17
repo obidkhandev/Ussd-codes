@@ -63,7 +63,6 @@ class CompanyBox extends StatelessWidget {
               ),
             ],
           ),
-          Text("Loyiha @obidkhandev tomonidan tayyorlandi.")
         ],
       ),
     );

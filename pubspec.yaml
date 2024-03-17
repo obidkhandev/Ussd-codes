@@ -65,7 +65,7 @@ flutter:
   #
 
 icons_launcher:
-  image_path: "assets/images/ussd_code_logo.png"
+  image_path: "assets/images/app_logo_2.jpg"
   platforms:
     android:
       enable: true
